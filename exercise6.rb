@@ -6,6 +6,9 @@ energy = 50
 loop do
   puts question
 input = gets.chomp
+unless input == "walk" || input == "run" || input == "go home"
+  puts "Please try again"
+end
  if input == "walk"
   distance += 1
   energy += 5
