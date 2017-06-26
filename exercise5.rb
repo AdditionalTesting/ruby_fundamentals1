@@ -1,8 +1,8 @@
 puts "How many pizzas do you want to order?"
   quantity = gets.to_i
 
-until quantity == 0
-  puts "How many toppings would you like on pizza #{quantity}?"
+quantity.times do |number|
+  puts "How many toppings would you like on pizza #{number + 1}?"
   toppings = gets.to_i
-  quantity -= 1
+
 end
